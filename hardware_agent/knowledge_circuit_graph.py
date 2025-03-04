@@ -16,7 +16,7 @@ from langchain_community.graphs.graph_document import (
 )
 
 # from langchain_openai import ChatOpenAI
-from langchain.pydantic_v1 import Field, BaseModel
+from pydantic import Field, BaseModel
 from langchain.prompts import ChatPromptTemplate
 # Query the knowledge graph in a RAG application
 from typing import Any, Callable, Dict, List, Literal, Optional, Tuple, Type, TypeVar, Union, Annotated

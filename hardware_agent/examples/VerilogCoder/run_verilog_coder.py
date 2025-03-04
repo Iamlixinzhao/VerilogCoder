@@ -21,6 +21,14 @@ parser.add_argument('--verilog_example_dir', help="Verilog question set dir", de
 args = parser.parse_args()
 print(args)
 
+# create the tmp directory for plan graph
+tmp_dir = "./tmp/"
+if not os.path.exists(tmp_dir):
+    os.makedirs(tmp_dir)
+    print(f"Created directory: {tmp_dir}")
+else:
+    print(f"Directory already exists: {tmp_dir}")
+
 # Load verilog problem sets
 # Add questions
 # user_task_ids = {'vector4', 'zero'}
@@ -28,14 +36,14 @@ user_task_ids = {'zero'}
 case_manager = VerilogCaseManager(file_path=args.verilog_example_dir, task_ids=user_task_ids)
 
 # llm configurations
-llama3_config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST_CHIPNEMO_NVCF")
+gpt4_config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST")
 
 # llama3 settings: Used for comparison
-llm_configs = {"task_planner_llm": llama3_config_list,
-               "kg_llm": llama3_config_list,
-               "graph_retrieval_llm": llama3_config_list,
-               "verilog_writing_llm": llama3_config_list,
-               "verilog_debug_llm": llama3_config_list}
+llm_configs = {"task_planner_llm": gpt4_config_list,
+               "kg_llm": gpt4_config_list,
+               "graph_retrieval_llm": gpt4_config_list,
+               "verilog_writing_llm": gpt4_config_list,
+               "verilog_debug_llm": gpt4_config_list}
 
 print("[Info]: VerilogCoder llm configs = ", llm_configs)
 
