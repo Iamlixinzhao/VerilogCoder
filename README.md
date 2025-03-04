@@ -6,6 +6,12 @@ VerilogCoder is an autonomous verilog coding agent that using graph-based planni
 ## LLM Models
 The prompts are finetuned for GPT-4 and Llama3. User can switch to other LLM models with their own prompts.
 
+## Benchmark and Generated .sv from VerilogCoder in the paper
+- **Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/
+- **Benchmark Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/dataset_dumpall
+- **VerilogCoder Generated Plan Reference Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/plans
+- **VerilogCoder Generated Verilog File Reference Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/plan_output
+
 ## Inputs and Outputs for VerilogCoder
 - **Input**: Target RTL specification, and testbench. 
 - **Output**: Completed functional correct Verilog module.
