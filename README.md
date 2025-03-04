@@ -53,7 +53,7 @@ pip install -U chainlit
 export PYTHONPATH=<cur_dir_path>:$PYTHONPATH
 ```
 
-## Usage
+## Quick Start
 1. Use the OAI_CONFIG_LIST to setup the LLM models.
 ```
 [
