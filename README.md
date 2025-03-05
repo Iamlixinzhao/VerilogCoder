@@ -1,7 +1,7 @@
 # VerilogCoder: Autonomous Verilog Coding Agents with Graph-based Planning and Abstract Syntax Tree (AST)-based Waveform Tracing Tool
 
 ## Description
-VerilogCoder is an autonomous verilog coding agent that using graph-based planning and AST-based waveform tracing tool. The paper is in [https://arxiv.org/abs/2408.08927v1]. We use Verilog Eval Human v2 benchmarks on https://gitlab-master.nvidia.com/avr/verilog-eval-v2/-/tree/main?ref_type=heads for experiments.
+VerilogCoder is an autonomous verilog coding agent that using graph-based planning and AST-based waveform tracing tool. The paper is in [https://arxiv.org/abs/2408.08927v1]. We use Verilog Eval Human v2 benchmarks on (https://github.com/NVlabs/verilog-eval/tree/main/dataset_spec-to-rtl) for experiments.
 
 ## LLM Models
 The prompts are finetuned for GPT-4 and Llama3. User can switch to other LLM models with their own prompts.
