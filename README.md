@@ -84,6 +84,7 @@ case_manager = VerilogCaseManager(file_path=args.verilog_example_dir, task_ids=u
 ```
 
 4. Run the command for "python hardware_agent/examples/VerilogCoder/run_verilog_coder.py --generate_plan_dir <TCRG_plan_dir> --generate_verilog_dir <Verilog_code_dir> --verilog_example_dir <Verilog_Eval_v2_benchmark_dir>".
+   
 Example:
 ```
 python hardware_agent/examples/VerilogCoder/run_verilog_coder.py --generate_plan_dir <case_dir>/plans/ --generate_verilog_dir <case_dir>/plan_output/ --verilog_example_dir <case_dir>
