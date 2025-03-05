@@ -7,10 +7,10 @@ VerilogCoder is an autonomous verilog coding agent that using graph-based planni
 The prompts are finetuned for GPT-4 and Llama3. User can switch to other LLM models with their own prompts.
 
 ## Benchmark and Generated .sv from VerilogCoder in the paper
-- **Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/
-- **Benchmark Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/dataset_dumpall
-- **VerilogCoder Generated Plan Reference Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/plans
-- **VerilogCoder Generated Verilog File Reference Dir**: <project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/plan_output
+- **Case Dir**: ```<project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/```
+- **Benchmark Dir**: ```<case_dir>/dataset_dumpall```
+- **VerilogCoder Generated Plan Reference Dir**: ```<case_dir>/plans```
+- **VerilogCoder Generated Verilog File Reference Dir**: ```<case_dir>/plan_output```
 
 ## Inputs and Outputs for VerilogCoder
 - **Input**: Target RTL specification, and testbench. 
@@ -84,8 +84,9 @@ case_manager = VerilogCaseManager(file_path=args.verilog_example_dir, task_ids=u
 ```
 
 4. Run the command for "python hardware_agent/examples/VerilogCoder/run_verilog_coder.py --generate_plan_dir <TCRG_plan_dir> --generate_verilog_dir <Verilog_code_dir> --verilog_example_dir <Verilog_Eval_v2_benchmark_dir>".
+Example:
 ```
-python hardware_agent/examples/VerilogCoder/run_verilog_coder.py --generate_plan_dir hardware_agent/examples/VerilogCoder/verilog-eval-v2/plans/ --generate_verilog_dir hardware_agent/examples/VerilogCoder/verilog-eval-v2/plan_output/ --verilog_example_dir hardware_agent/examples/VerilogCoder/verilog-eval-v2/dataset_dumpall/
+python hardware_agent/examples/VerilogCoder/run_verilog_coder.py --generate_plan_dir <case_dir>/plans/ --generate_verilog_dir <case_dir>/plan_output/ --verilog_example_dir <case_dir>
 ```
 
 
