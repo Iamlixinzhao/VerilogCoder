@@ -1,3 +1,9 @@
+#
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+# Author : Chia-Tung (Mark) Ho, NVIDIA
+#
+
 # utilities for tools descriptions
 from typing import Any, Callable, Dict, List, Literal, Optional, Tuple, Type, TypeVar, Union
 

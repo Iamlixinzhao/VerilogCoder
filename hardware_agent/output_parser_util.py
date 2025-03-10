@@ -1,3 +1,9 @@
+#
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+# Author : Chia-Tung (Mark) Ho, NVIDIA
+#
+
 import re
 from autogen.agentchat.chat import ChatResult
 

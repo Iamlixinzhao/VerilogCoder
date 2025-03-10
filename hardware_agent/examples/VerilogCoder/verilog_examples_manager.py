@@ -1,3 +1,9 @@
+#
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+# Author : Chia-Tung (Mark) Ho, NVIDIA
+#
+
 # read the data
 import os
 from hardware_agent.examples.VerilogCoder.load_verilog_cases import load_verilog_eval_jsonl, load_verilog_eval2_cases

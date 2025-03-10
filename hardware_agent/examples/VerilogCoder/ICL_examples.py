@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+# Author : Chia-Tung (Mark) Ho, NVIDIA
+#
 
 # For circuit8 ICL to identify the flip-flops and latch
 SequentialCircuitExample="""

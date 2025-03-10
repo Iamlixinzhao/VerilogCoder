@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+# Author : Chia-Tung (Mark) Ho, NVIDIA
+#
 
 VERILOG_PLAN_RETRIEVE_PROMPT_TEMPLATE ="""
 You are a top-tier Verilog expert with experience in retrieving required information for the following plan using retrieve_additional_plan_information_tool. 
