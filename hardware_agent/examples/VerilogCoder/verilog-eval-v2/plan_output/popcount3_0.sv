@@ -148,24 +148,20 @@ module TopModule
   output logic [1:0] out
 );
 
-  // Define a 2-bit register to store the count of '1's in the input vector
-  logic [1:0] count;
+  // Combinational logic for population count
 
-  // Combinational logic to count the number of '1's in the 3-bit input vector
   always @(*) begin
     case (in)
-      3'b000: count = 2'b00;
-      3'b001: count = 2'b01;
-      3'b010: count = 2'b01;
-      3'b011: count = 2'b10;
-      3'b100: count = 2'b01;
-      3'b101: count = 2'b10;
-      3'b110: count = 2'b10;
-      3'b111: count = 2'b11;
+      3'b000: out = 2'b00;
+      3'b001: out = 2'b01;
+      3'b010: out = 2'b01;
+      3'b011: out = 2'b10;
+      3'b100: out = 2'b01;
+      3'b101: out = 2'b10;
+      3'b110: out = 2'b10;
+      3'b111: out = 2'b11;
+      default: out = 2'b00; // Default case to handle any unexpected input
     endcase
   end
-
-  // Assign the output to the count
-  assign out = count;
 
 endmodule

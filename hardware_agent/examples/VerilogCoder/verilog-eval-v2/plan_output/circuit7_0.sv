@@ -153,20 +153,18 @@ module TopModule
   output logic q
 );
 
-  // State register
+  // Internal register to hold the state of q
   logic q_reg;
-  logic a_prev;
 
   always @(posedge clk) begin
-    a_prev <= a;
-    if (a && !a_prev)
+    if (a) begin
       q_reg <= 0;
-    else if (!a)
-      q_reg <= 1'b1;
-    else
-      q_reg <= q_reg;
+    end else begin
+      q_reg <= 1;
+    end
   end
 
+  // Assign the internal register to the output
   assign q = q_reg;
 
 endmodule

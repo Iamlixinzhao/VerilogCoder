@@ -187,17 +187,17 @@ module TopModule
 );
 
   // Intermediate wires
-  logic wire1;
-  logic wire2;
+  logic and1_out;
+  logic and2_out;
 
-  // AND gates
-  assign wire1 = a & b; // Implement the first AND gate with inputs a and b, and connect the output to wire1.
-  assign wire2 = c & d; // Implement the second AND gate with inputs c and d, and connect the output to wire2.
+  // First layer: AND gates
+  assign and1_out = a & b;
+  assign and2_out = c & d;
 
-  // OR gate
-  assign out = wire1 | wire2;
+  // Second layer: OR gate
+  assign out = and1_out | and2_out;
 
-  // NOT gate
+  // Inverted output
   assign out_n = ~out;
 
 endmodule

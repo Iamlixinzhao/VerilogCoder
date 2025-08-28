@@ -137,21 +137,22 @@ module TopModule
   output logic out
 );
 
-  // Combinational logic
+  // Intermediate signal for XOR output
   logic xor_out;
 
-  assign xor_out = in ^ out;
-
-  // Sequential logic
-  logic flip_flop_out; // Declare an internal register
-
-  initial flip_flop_out = 0; // Initialize the internal register to 0
-
-  always @(posedge clk) begin
-    flip_flop_out <= xor_out; // Assign the value to the internal register
+  // Initialize out to 0
+  initial begin
+    out = 0;
   end
 
-  // Connect the output of the D flip-flop to the 'out' port of the TopModule
-  assign out = flip_flop_out; // Assign the internal register to the output port
+  // XOR gate implementation
+  always @(*) begin
+    xor_out = in ^ out;
+  end
+
+  // D flip-flop implementation
+  always @(posedge clk) begin
+    out <= xor_out;
+  end
 
 endmodule

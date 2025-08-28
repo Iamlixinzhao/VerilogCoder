@@ -8,18 +8,14 @@ module TopModule
   output logic [3:0] q
 );
 
-  // Combinational logic
   always @(*) begin
-    if (c == 4'b0000)
-      q = b;
-    else if (c == 4'b0001)
-      q = e;
-    else if (c == 4'b0010)
-      q = a;
-    else if (c == 4'b0011)
-      q = d;
-    else
-      q = 4'b1111; // Default value 'f' for all other values of 'c'
+    case (c)
+      4'b0000: q = b; // When c is 0
+      4'b0001: q = e; // When c is 1
+      4'b0010: q = a; // When c is 2
+      4'b0011: q = d; // When c is 3
+      default: q = 4'b1111; // When c is 4 to f
+    endcase
   end
 
 endmodule

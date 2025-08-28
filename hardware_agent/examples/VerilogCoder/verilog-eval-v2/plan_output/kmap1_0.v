@@ -6,7 +6,13 @@ module TopModule
   output logic out
 );
 
-  // Combinational logic
-  assign out = a | b | c;
+  // Combinational logic for Karnaugh map implementation
+  always @(*) begin
+    if ((b & ~c) | (b & c) | a | (~b & c)) begin
+      out = 1;
+    end else begin
+      out = 0;
+    end
+  end
 
 endmodule

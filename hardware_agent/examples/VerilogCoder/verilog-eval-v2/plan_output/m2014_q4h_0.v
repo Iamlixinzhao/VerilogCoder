@@ -4,6 +4,14 @@ module TopModule
   output logic out
 );
 
-  assign out = in;
+  // Initialize output
+  initial begin
+    out = 0;
+  end
+
+  // Combinational logic
+  always @(*) begin
+    out = in;
+  end
 
 endmodule

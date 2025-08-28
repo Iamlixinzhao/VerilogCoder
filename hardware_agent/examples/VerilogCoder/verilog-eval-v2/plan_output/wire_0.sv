@@ -148,6 +148,7 @@ module TopModule
   output logic out
 );
 
+  // Direct connection
   assign out = in;
 
 endmodule

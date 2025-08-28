@@ -4,8 +4,7 @@ module TopModule
   output logic [15:0] q
 );
 
-  // Combinational logic
-
+  // Combinational logic to map input 'a' to output 'q'
   always @(*) begin
     case (a)
       3'b000: q = 16'h1232;
@@ -16,7 +15,7 @@ module TopModule
       3'b101: q = 16'h64ce;
       3'b110: q = 16'hc526;
       3'b111: q = 16'h2f19;
-      default: q = 16'h0000; // Default case to handle any unspecified values of 'a'
+      default: q = 16'h0000; // Default case for safety
     endcase
   end
 

@@ -1,127 +1,176 @@
-# VerilogCoder: Autonomous Verilog Coding Agents with Graph-based Planning and Abstract Syntax Tree (AST)-based Waveform Tracing Tool
+# VerilogCoder
 
-## Description
-VerilogCoder is an autonomous verilog coding agent that using graph-based planning and AST-based waveform tracing tool. The paper is in [https://arxiv.org/abs/2408.08927v1]. We use Verilog Eval Human v2 benchmarks on (https://github.com/NVlabs/verilog-eval/tree/main/dataset_spec-to-rtl) for experiments.
+一个基于AI的Verilog代码生成和验证工具，支持多种LLM后端，包括OpenAI API和本地vLLM服务。
 
-## LLM Models
-The prompts are finetuned for GPT-4 and Llama3. User can switch to other LLM models with their own prompts.
+## 🚀 项目特性
 
-## Benchmark and Generated .sv from VerilogCoder in the paper
-- **Case Dir**: ```<project_home_dir>/hardware_agent/examples/VerilogCoder/verilog-eval-v2/```
-- **Benchmark Dir**: ```<case_dir>/dataset_dumpall```
-- **VerilogCoder Generated Plan Reference Dir**: ```<case_dir>/plans```
-- **VerilogCoder Generated Verilog File Reference Dir**: ```<case_dir>/plan_output```
+- **AI驱动的Verilog代码生成**: 使用大语言模型自动生成Verilog代码
+- **多LLM后端支持**: 支持OpenAI API、本地vLLM服务等
+- **Verilog验证**: 集成iverilog进行代码编译和仿真验证
+- **批量测试**: 支持Verilog-Eval-v2基准测试集的批量处理
+- **智能错误检测**: 自动识别和修复常见的Verilog语法错误
 
-## Inputs and Outputs for VerilogCoder
-- **Input**: Target RTL specification, and testbench. 
-- **Output**: Completed functional correct Verilog module.
-
-## Prerequisite Tool Installation
-In order to run the waveform tracing tool, user need to install iverilog.
+## 🏗️ 项目结构
 
 ```
-git clone https://github.com/steveicarus/iverilog.git && cd iverilog \ 
-        && git checkout 01441687235135d1c12eeef920f75d97995da333 \ 
-        && sh ./autoconf.sh  
-./configure --prefix=<local dir> 
-make –j4 
-Make install 
-export PATH=<local dir>:$PATH 
+VerilogCoder/
+├── hardware_agent/           # 硬件代理核心模块
+│   ├── examples/            # 示例和测试
+│   │   └── VerilogCoder/   # VerilogCoder主程序
+│   └── general_agent.py    # 通用代理模块
+├── autogen/                 # AutoGen框架核心
+├── setup.py                 # 安装配置
+├── OAI_CONFIG_LIST         # LLM配置文件
+└── README.md               # 项目说明
 ```
 
-## Installation
+## 📋 系统要求
 
-1. Create conda environment
+- Python 3.8+
+- iverilog (用于Verilog编译和仿真)
+- 足够的磁盘空间用于模型缓存
+
+## 🛠️ 安装步骤
+
+### 1. 克隆项目
+```bash
+git clone https://github.com/yourusername/VerilogCoder.git
+cd VerilogCoder
 ```
-#Create conda env with python >= 3.10
-conda create -n hardware_agent python=3.10.13
+
+### 2. 创建虚拟环境
+```bash
+conda create -n hardware_agent python=3.10
 conda activate hardware_agent
 ```
 
-2. Install the packages
-```
-#setup environment in conda env
-pip install -e . or python setup.py install (non-editable mode)
-pip install pypdf
-pip install PILLOW
-pip install network
-pip install matplotlib
-pip install pydantic==2.10.1
-pip install langchain==0.3.14
-pip install llangchain_openai==0.2.14
-pip install langchain_community==0.3.14
-pip install chromadb==0.4.24
-pip install IPython 
-pip install markdownify 
-pip install pypdf 
-pip install sentence_transformers==2.7.0
-pip install -U chainlit 
-export PYTHONPATH=<cur_dir_path>:$PYTHONPATH
+### 3. 安装依赖
+```bash
+pip install -e .
+pip install vcdvcd pandas ply
 ```
 
-## Quick Start
-1. Use the OAI_CONFIG_LIST to setup the LLM models.
+### 4. 安装iverilog
+```bash
+# macOS
+brew install icarus-verilog
+
+# Ubuntu/Debian
+sudo apt-get install iverilog
+
+# CentOS/RHEL
+sudo yum install iverilog
 ```
+
+## 🔧 配置
+
+### OpenAI API配置
+创建 `OAI_CONFIG_LIST` 文件：
+```json
 [
     {
-        "model": "gpt-4-turbo",
-	"api_key": ""
+        "model": "gpt-4o",
+        "api_key": "your-openai-api-key"
     }
 ]
 ```
 
-2. make a temp working directory.
-```
-mkdir verilog_tool_tmp
-```
-
-3. Select the cases to run VerilogCoder in hardware_agent/examples/VerilogCoder/run_verilog_coder.py using user_task_ids.
-```
-# Load verilog problem sets
-# Add questions
-user_task_ids = {'zero'}
-case_manager = VerilogCaseManager(file_path=args.verilog_example_dir, task_ids=user_task_ids)
-```
-
-4. Run the command for "python hardware_agent/examples/VerilogCoder/run_verilog_coder.py --generate_plan_dir <TCRG_plan_dir> --generate_verilog_dir <Verilog_code_dir> --verilog_example_dir <Verilog_Eval_v2_benchmark_dir>".
-   
-Example:
-```
-python hardware_agent/examples/VerilogCoder/run_verilog_coder.py --generate_plan_dir <case_dir>/plans/ --generate_verilog_dir <case_dir>/plan_output/ --verilog_example_dir <case_dir>
+### vLLM本地服务配置
+```json
+[
+    {
+        "model": "microsoft/DialoGPT-small",
+        "api_base": "http://localhost:8000/v1",
+        "api_type": "open_ai",
+        "api_key": "dummy-key"
+    }
+]
 ```
 
-## Signing Your Work
-We require that all contributors "sign-off" on their commits. This certifies that the contribution is your original work, or you have rights to submit it under the same license, or a compatible license.
+## 🚀 使用方法
 
-Any contribution which contains commits that are not Signed-Off will not be accepted.
-To sign off on a commit you simply use the --signoff (or -s) option when committing your changes:
-```
-$ git commit -s -m "Add cool feature."
-```
-This will append the following to your commit message:
-```
-Signed-off-by: Your Name <your@email.com>
-```
-Full text of the DCO:
+### 启动vLLM本地服务
+```bash
+# 启动vLLM服务
+vllm serve microsoft/DialoGPT-small --host 0.0.0.0 --port 8000 -O0
 
-  Developer Certificate of Origin
-  Version 1.1
-  
-  Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
-  1 Letterman Drive
-  Suite D4700
-  San Francisco, CA, 94129
-  
-  Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-  Developer's Certificate of Origin 1.1
-  
-  By making a contribution to this project, I certify that:
-  
-  (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
-  
-  (b) The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or
-  
-  (c) The contribution was provided directly to me by some other person who certified (a), (b) or (c) and I have not modified it.
-  
-  (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
+# 或者使用启动脚本
+python start_vllm_local.py
+```
+
+### 运行VerilogCoder
+```bash
+cd hardware_agent/examples/VerilogCoder
+
+# 运行单个测试
+python run_verilog_coder.py \
+    --generate_plan_dir verilog-eval-v2/plan_output \
+    --generate_verilog_dir verilog-eval-v2/plan_output \
+    --verilog_example_dir verilog-eval-v2/dataset_dumpall
+
+# 运行所有测试
+python run_verilog_coder.py \
+    --generate_plan_dir verilog-eval-v2/plan_output \
+    --generate_verilog_dir verilog-eval-v2/plan_output \
+    --verilog_example_dir verilog-eval-v2/dataset_dumpall
+```
+
+### 分析结果
+```bash
+# 分析生成结果
+python analyze_verilogcoder_results.py
+
+# 测试特定任务
+python analyze_verilogcoder_results.py --test-only zero
+```
+
+## 📊 性能评估
+
+项目支持Verilog-Eval-v2基准测试集，包含156个Verilog编码任务，涵盖：
+- 基本逻辑门
+- 组合逻辑电路
+- 时序逻辑电路
+- 复杂数字系统
+
+## 🔍 故障排除
+
+### 常见问题
+
+1. **ModuleNotFoundError**: 确保已激活正确的conda环境
+2. **iverilog未找到**: 检查iverilog是否正确安装并添加到PATH
+3. **vLLM启动失败**: 检查模型名称和端口配置
+
+### 调试模式
+```bash
+# 启用详细日志
+export TORCHDYNAMO_VERBOSE=1
+export TORCH_LOGS="+dynamo"
+```
+
+## 🤝 贡献指南
+
+欢迎提交Issue和Pull Request！请确保：
+- 代码符合PEP 8规范
+- 添加适当的测试用例
+- 更新相关文档
+
+## 📄 许可证
+
+本项目采用MIT许可证 - 详见 [LICENSE](LICENSE) 文件
+
+## 🙏 致谢
+
+- [AutoGen](https://github.com/microsoft/autogen) - 多智能体对话框架
+- [vLLM](https://github.com/vllm-project/vllm) - 高性能LLM推理引擎
+- [Verilog-Eval-v2](https://github.com/NVlabs/verilog-eval) - Verilog评估基准
+
+## 📞 联系方式
+
+如有问题或建议，请通过以下方式联系：
+- 提交GitHub Issue
+- 发送邮件至: your-email@example.com
+
+---
+
+⭐ 如果这个项目对你有帮助，请给它一个星标！
 

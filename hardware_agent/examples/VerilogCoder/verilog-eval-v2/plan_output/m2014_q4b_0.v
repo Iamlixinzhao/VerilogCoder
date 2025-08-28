@@ -6,12 +6,12 @@ module TopModule
   output logic q
 );
 
-  // D flip-flop with positive edge-triggered clock and asynchronous reset
   always @(posedge clk or posedge ar) begin
-    if (ar)
-      q <= 0;
-    else
+    if (ar) begin
+      q <= 1'b0;
+    end else begin
       q <= d;
+    end
   end
 
 endmodule

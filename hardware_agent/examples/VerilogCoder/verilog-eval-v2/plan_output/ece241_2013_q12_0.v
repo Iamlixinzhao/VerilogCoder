@@ -14,11 +14,18 @@ module TopModule
 
   always @(posedge clk) begin
     if (enable) begin
-      Q <= {Q[6:0], S};
+      Q[0] <= S;
+      Q[1] <= Q[0];
+      Q[2] <= Q[1];
+      Q[3] <= Q[2];
+      Q[4] <= Q[3];
+      Q[5] <= Q[4];
+      Q[6] <= Q[5];
+      Q[7] <= Q[6];
     end
   end
 
-  // Multiplexer
+  // Multiplexer logic to select Q[0] to Q[7] based on A, B, C
   always @(*) begin
     case ({A, B, C})
       3'b000: Z = Q[0];
@@ -29,7 +36,7 @@ module TopModule
       3'b101: Z = Q[5];
       3'b110: Z = Q[6];
       3'b111: Z = Q[7];
-      default: Z = 1'b0;
+      default: Z = 1'b0; // Default case to handle any unexpected input
     endcase
   end
 

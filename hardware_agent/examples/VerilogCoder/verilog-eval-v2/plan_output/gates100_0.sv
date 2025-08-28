@@ -203,13 +203,12 @@ module TopModule
   output logic        out_xor
 );
 
-  // Combinational logic for out_and
-  assign out_and = &in;
+  // Combinational logic for 100-input gates
 
-  // Combinational logic for out_or
-  assign out_or = |in;
-
-  // Combinational logic for out_xor
-  assign out_xor = ^in;
+  always @(*) begin
+    out_and = &in; // AND reduction operator
+    out_or  = |in; // OR reduction operator
+    out_xor = ^in; // XOR reduction operator
+  end
 
 endmodule

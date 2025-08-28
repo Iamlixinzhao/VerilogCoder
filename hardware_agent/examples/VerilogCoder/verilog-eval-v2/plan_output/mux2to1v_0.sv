@@ -163,15 +163,13 @@ module TopModule
   output logic [99:0] out
 );
 
-  // Combinational logic
-
-  logic [99:0] out_mux;
-
+  // Combinational logic for 2-1 multiplexer
   always @(*) begin
-    out_mux = sel ? b : a;
+    if (sel) begin
+      out = b;
+    end else begin
+      out = a;
+    end
   end
 
-  // Structural connections
-
-  assign out = out_mux;
 endmodule

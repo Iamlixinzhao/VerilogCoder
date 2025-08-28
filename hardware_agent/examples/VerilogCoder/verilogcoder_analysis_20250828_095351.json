@@ -1,0 +1,2656 @@
+{
+  "timestamp": "2025-08-28T09:53:51.452733",
+  "summary": {
+    "total_tasks": 156,
+    "overall_accuracy": 85.8974358974359,
+    "compilation_accuracy": 94.87179487179486,
+    "generated_files": 674
+  },
+  "task_results": {
+    "2012_q1g": {
+      "task_id": "2012_q1g",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2012_q1g_0.v",
+        "verilog-eval-v2/plan_output/2012_q1g_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2012_q1g_0.sv",
+        "verilog-eval-v2/plan_output/2012_q1g_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/2012_q1g_0.log",
+        "verilog-eval-v2/plan_output/2012_q1g_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2012_q2b": {
+      "task_id": "2012_q2b",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2012_q2b_0.v",
+        "verilog-eval-v2/plan_output/2012_q2b_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2012_q2b_0.sv",
+        "verilog-eval-v2/plan_output/2012_q2b_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2012_q2fsm": {
+      "task_id": "2012_q2fsm",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2012_q2fsm_0.v",
+        "verilog-eval-v2/plan_output/2012_q2fsm_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2012_q2fsm_0.sv",
+        "verilog-eval-v2/plan_output/2012_q2fsm_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2013_q2afsm": {
+      "task_id": "2013_q2afsm",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2013_q2afsm_0.v",
+        "verilog-eval-v2/plan_output/2013_q2afsm_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2013_q2afsm_0.sv",
+        "verilog-eval-v2/plan_output/2013_q2afsm_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2013_q2bfsm": {
+      "task_id": "2013_q2bfsm",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2013_q2bfsm_0.v",
+        "verilog-eval-v2/plan_output/2013_q2bfsm_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2013_q2bfsm_0.sv",
+        "verilog-eval-v2/plan_output/2013_q2bfsm_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/2013_q2bfsm_0.log",
+        "verilog-eval-v2/plan_output/2013_q2bfsm_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2014_q3bfsm": {
+      "task_id": "2014_q3bfsm",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2014_q3bfsm_0.v",
+        "verilog-eval-v2/plan_output/2014_q3bfsm_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2014_q3bfsm_0.sv",
+        "verilog-eval-v2/plan_output/2014_q3bfsm_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2014_q3c": {
+      "task_id": "2014_q3c",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2014_q3c_0.v",
+        "verilog-eval-v2/plan_output/2014_q3c_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2014_q3c_0.sv",
+        "verilog-eval-v2/plan_output/2014_q3c_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2014_q3fsm": {
+      "task_id": "2014_q3fsm",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2014_q3fsm_0.v",
+        "verilog-eval-v2/plan_output/2014_q3fsm_0_success.v",
+        "verilog-eval-v2/plan_output/2014_q3fsm_0.v",
+        "verilog-eval-v2/plan_output/2014_q3fsm_0_success.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2014_q3fsm_0_success.sv",
+        "verilog-eval-v2/plan_output/2014_q3fsm_0.sv",
+        "verilog-eval-v2/plan_output/2014_q3fsm_0_success.sv",
+        "verilog-eval-v2/plan_output/2014_q3fsm_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "2014_q4a": {
+      "task_id": "2014_q4a",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/2014_q4a_0.v",
+        "verilog-eval-v2/plan_output/2014_q4a_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4a_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/2014_q4a_0.sv",
+        "verilog-eval-v2/plan_output/2014_q4a_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4a_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: error: port ``d'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: error: port ``ena'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: error: port ``q'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: warning: Instantiating module TopModule with dangling input port 1 (clk) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: warning: Instantiating module TopModule with dangling input port 2 (w) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: warning: Instantiating module TopModule with dangling input port 3 (R) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: warning: Instantiating module TopModule with dangling input port 4 (E) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpmkb9c0f3/Prob028_m2014_q4a_test.sv:67: warning: Instantiating module TopModule with dangling input port 5 (L) floating.\n3 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "7420": {
+      "task_id": "7420",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/7420_0.v",
+        "verilog-eval-v2/plan_output/7420_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/7420_0.sv",
+        "verilog-eval-v2/plan_output/7420_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "7458": {
+      "task_id": "7458",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/7458_0.v",
+        "verilog-eval-v2/plan_output/7458_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/7458_0.sv",
+        "verilog-eval-v2/plan_output/7458_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "always_case": {
+      "task_id": "always_case",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/always_case_0.v",
+        "verilog-eval-v2/plan_output/always_casez_0.v",
+        "verilog-eval-v2/plan_output/always_case_0.v",
+        "verilog-eval-v2/plan_output/always_case2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/always_case_0.sv",
+        "verilog-eval-v2/plan_output/always_case_0.sv",
+        "verilog-eval-v2/plan_output/always_casez_0.sv",
+        "verilog-eval-v2/plan_output/always_case2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "always_case2": {
+      "task_id": "always_case2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/always_case2_0.v",
+        "verilog-eval-v2/plan_output/always_case2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/always_case2_0.sv",
+        "verilog-eval-v2/plan_output/always_case2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "always_casez": {
+      "task_id": "always_casez",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/always_casez_0.v",
+        "verilog-eval-v2/plan_output/always_casez_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/always_casez_0.sv",
+        "verilog-eval-v2/plan_output/always_casez_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "always_if": {
+      "task_id": "always_if",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/always_if_0.v",
+        "verilog-eval-v2/plan_output/always_if2_0.v",
+        "verilog-eval-v2/plan_output/always_if_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/always_if_0.sv",
+        "verilog-eval-v2/plan_output/always_if2_0.sv",
+        "verilog-eval-v2/plan_output/always_if_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: error: port ``cpu_overheated'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: error: port ``arrived'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: error: port ``gas_tank_empty'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: error: port ``shut_off_computer'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: error: port ``keep_driving'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: warning: Instantiating module RefModule with dangling input port 1 (a) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: warning: Instantiating module RefModule with dangling input port 2 (b) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: warning: Instantiating module RefModule with dangling input port 3 (sel_b1) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:97: warning: Instantiating module RefModule with dangling input port 4 (sel_b2) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: error: port ``cpu_overheated'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: error: port ``arrived'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: error: port ``gas_tank_empty'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: error: port ``shut_off_computer'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: error: port ``keep_driving'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: warning: Instantiating module TopModule with dangling input port 1 (a) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: warning: Instantiating module TopModule with dangling input port 2 (b) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: warning: Instantiating module TopModule with dangling input port 3 (sel_b1) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmppwih6due/Prob132_always_if2_test.sv:104: warning: Instantiating module TopModule with dangling input port 4 (sel_b2) floating.\n10 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "always_if2": {
+      "task_id": "always_if2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/always_if2_0.v",
+        "verilog-eval-v2/plan_output/always_if2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/always_if2_0.sv",
+        "verilog-eval-v2/plan_output/always_if2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "always_nolatches": {
+      "task_id": "always_nolatches",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/always_nolatches_0.v",
+        "verilog-eval-v2/plan_output/always_nolatches_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/always_nolatches_0.sv",
+        "verilog-eval-v2/plan_output/always_nolatches_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "alwaysblock1": {
+      "task_id": "alwaysblock1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/alwaysblock1_0.v",
+        "verilog-eval-v2/plan_output/alwaysblock1_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/alwaysblock1_0.sv",
+        "verilog-eval-v2/plan_output/alwaysblock1_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "alwaysblock2": {
+      "task_id": "alwaysblock2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/alwaysblock2_0.v",
+        "verilog-eval-v2/plan_output/alwaysblock2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/alwaysblock2_0.sv",
+        "verilog-eval-v2/plan_output/alwaysblock2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "andgate": {
+      "task_id": "andgate",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/andgate_0.v",
+        "verilog-eval-v2/plan_output/andgate_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/andgate_0.sv",
+        "verilog-eval-v2/plan_output/andgate_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "bugs_addsubz": {
+      "task_id": "bugs_addsubz",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/bugs_addsubz_0.v",
+        "verilog-eval-v2/plan_output/bugs_addsubz_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/bugs_addsubz_0.sv",
+        "verilog-eval-v2/plan_output/bugs_addsubz_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "bugs_case": {
+      "task_id": "bugs_case",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/bugs_case_0.v",
+        "verilog-eval-v2/plan_output/bugs_case_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/bugs_case_0.sv",
+        "verilog-eval-v2/plan_output/bugs_case_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "bugs_mux2": {
+      "task_id": "bugs_mux2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/bugs_mux2_0.v",
+        "verilog-eval-v2/plan_output/bugs_mux2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/bugs_mux2_0.sv",
+        "verilog-eval-v2/plan_output/bugs_mux2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit1": {
+      "task_id": "circuit1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit1_0.v",
+        "verilog-eval-v2/plan_output/circuit1_0.v",
+        "verilog-eval-v2/plan_output/circuit10_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit1_0.sv",
+        "verilog-eval-v2/plan_output/circuit1_0.sv",
+        "verilog-eval-v2/plan_output/circuit10_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit10": {
+      "task_id": "circuit10",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit10_0.v",
+        "verilog-eval-v2/plan_output/circuit10_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit10_0.sv",
+        "verilog-eval-v2/plan_output/circuit10_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit2": {
+      "task_id": "circuit2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit2_0.v",
+        "verilog-eval-v2/plan_output/circuit2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit2_0.sv",
+        "verilog-eval-v2/plan_output/circuit2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit3": {
+      "task_id": "circuit3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit3_0.v",
+        "verilog-eval-v2/plan_output/circuit3_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit3_0.sv",
+        "verilog-eval-v2/plan_output/circuit3_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit4": {
+      "task_id": "circuit4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit4_0.v",
+        "verilog-eval-v2/plan_output/circuit4_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit4_0.sv",
+        "verilog-eval-v2/plan_output/circuit4_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit5": {
+      "task_id": "circuit5",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit5_0.v",
+        "verilog-eval-v2/plan_output/circuit5_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit5_0.sv",
+        "verilog-eval-v2/plan_output/circuit5_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit6": {
+      "task_id": "circuit6",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit6_0.v",
+        "verilog-eval-v2/plan_output/circuit6_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit6_0.sv",
+        "verilog-eval-v2/plan_output/circuit6_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit7": {
+      "task_id": "circuit7",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit7_0.v",
+        "verilog-eval-v2/plan_output/circuit7_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit7_0.sv",
+        "verilog-eval-v2/plan_output/circuit7_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit8": {
+      "task_id": "circuit8",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit8_0.v",
+        "verilog-eval-v2/plan_output/circuit8_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit8_0.sv",
+        "verilog-eval-v2/plan_output/circuit8_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/circuit8_0.log",
+        "verilog-eval-v2/plan_output/circuit8_0.log"
+      ],
+      "status": "success",
+      "errors": [
+        "syntax_error",
+        "syntax_error"
+      ],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "circuit9": {
+      "task_id": "circuit9",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/circuit9_0.v",
+        "verilog-eval-v2/plan_output/circuit9_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/circuit9_0.sv",
+        "verilog-eval-v2/plan_output/circuit9_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "conditional": {
+      "task_id": "conditional",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/conditional_0.v",
+        "verilog-eval-v2/plan_output/conditional_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/conditional_0.sv",
+        "verilog-eval-v2/plan_output/conditional_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "conwaylife": {
+      "task_id": "conwaylife",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/conwaylife_0.v",
+        "verilog-eval-v2/plan_output/conwaylife_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/conwaylife_0.sv",
+        "verilog-eval-v2/plan_output/conwaylife_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "count10": {
+      "task_id": "count10",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/count10_0.v",
+        "verilog-eval-v2/plan_output/count10_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/count10_0.sv",
+        "verilog-eval-v2/plan_output/count10_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "count15": {
+      "task_id": "count15",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/count15_0.v",
+        "verilog-eval-v2/plan_output/count15_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/count15_0.sv",
+        "verilog-eval-v2/plan_output/count15_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "count1to10": {
+      "task_id": "count1to10",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/count1to10_0.v",
+        "verilog-eval-v2/plan_output/count1to10_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/count1to10_0.sv",
+        "verilog-eval-v2/plan_output/count1to10_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "count_clock": {
+      "task_id": "count_clock",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "countbcd": {
+      "task_id": "countbcd",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/countbcd_0.v",
+        "verilog-eval-v2/plan_output/countbcd_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/countbcd_0.sv",
+        "verilog-eval-v2/plan_output/countbcd_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/countbcd_0.log",
+        "verilog-eval-v2/plan_output/countbcd_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "counter_2bc": {
+      "task_id": "counter_2bc",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/counter_2bc_0.v",
+        "verilog-eval-v2/plan_output/counter_2bc_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/counter_2bc_0.sv",
+        "verilog-eval-v2/plan_output/counter_2bc_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "countslow": {
+      "task_id": "countslow",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/countslow_0.v",
+        "verilog-eval-v2/plan_output/countslow_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/countslow_0.sv",
+        "verilog-eval-v2/plan_output/countslow_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "dff": {
+      "task_id": "dff",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/dff_0.v",
+        "verilog-eval-v2/plan_output/dff8ar_0.v",
+        "verilog-eval-v2/plan_output/dff_0.v",
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.v",
+        "verilog-eval-v2/plan_output/dff8_0.v",
+        "verilog-eval-v2/plan_output/dff16e_0.v",
+        "verilog-eval-v2/plan_output/dff8r_0.v",
+        "verilog-eval-v2/plan_output/dff8p_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/dff_0.sv",
+        "verilog-eval-v2/plan_output/dff8ar_0.sv",
+        "verilog-eval-v2/plan_output/dff8p_0.sv",
+        "verilog-eval-v2/plan_output/dff8_0.sv",
+        "verilog-eval-v2/plan_output/dff8r_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.sv",
+        "verilog-eval-v2/plan_output/dff16e_0.sv",
+        "verilog-eval-v2/plan_output/dff_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.log"
+      ],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:114: error: port ``reset'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:114: warning: Instantiating module RefModule with dangling input port 2 (resetn) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:114: warning: Instantiating module RefModule with dangling input port 3 (byteena) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:114: warning: Port 4 (d) of RefModule expects 16 bits, got 8.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:114:        : Padding 8 high bits of the port.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:114: warning: Port 5 (q) of RefModule expects 16 bits, got 8.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:114:        : Padding 8 high bits of the port.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:120: error: port ``reset'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:120: warning: Port 2 (d) of TopModule expects 1 bits, got 8.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:120:        : Pruning 7 high bits of the expression.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:120: warning: Port 3 (q) of TopModule expects 1 bits, got 8.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5othzcex/Prob046_dff8p_test.sv:120:        : Padding 7 high bits of the expression.\n2 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "dff16e": {
+      "task_id": "dff16e",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/dff16e_0.v",
+        "verilog-eval-v2/plan_output/dff16e_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/dff16e_0.sv",
+        "verilog-eval-v2/plan_output/dff16e_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "dff8": {
+      "task_id": "dff8",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/dff8_0.v",
+        "verilog-eval-v2/plan_output/dff8ar_0.v",
+        "verilog-eval-v2/plan_output/dff8_0.v",
+        "verilog-eval-v2/plan_output/dff8r_0.v",
+        "verilog-eval-v2/plan_output/dff8p_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/dff8_0.sv",
+        "verilog-eval-v2/plan_output/dff8ar_0.sv",
+        "verilog-eval-v2/plan_output/dff8p_0.sv",
+        "verilog-eval-v2/plan_output/dff8_0.sv",
+        "verilog-eval-v2/plan_output/dff8r_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpiq7fnnj8/Prob046_dff8p_test.sv:114: error: port ``reset'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpiq7fnnj8/Prob046_dff8p_test.sv:120: error: port ``reset'' is not a port of top_module1.\n2 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "dff8ar": {
+      "task_id": "dff8ar",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/dff8ar_0.v",
+        "verilog-eval-v2/plan_output/dff8ar_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/dff8ar_0.sv",
+        "verilog-eval-v2/plan_output/dff8ar_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "dff8p": {
+      "task_id": "dff8p",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/dff8p_0.v",
+        "verilog-eval-v2/plan_output/dff8p_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/dff8p_0.sv",
+        "verilog-eval-v2/plan_output/dff8p_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "dff8r": {
+      "task_id": "dff8r",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/dff8r_0.v",
+        "verilog-eval-v2/plan_output/dff8r_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/dff8r_0.sv",
+        "verilog-eval-v2/plan_output/dff8r_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "dualedge": {
+      "task_id": "dualedge",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/dualedge_0.v",
+        "verilog-eval-v2/plan_output/dualedge_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/dualedge_0.sv",
+        "verilog-eval-v2/plan_output/dualedge_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ece241_2013_q12": {
+      "task_id": "ece241_2013_q12",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ece241_2013_q12_0.v",
+        "verilog-eval-v2/plan_output/ece241_2013_q12_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ece241_2013_q12_0.sv",
+        "verilog-eval-v2/plan_output/ece241_2013_q12_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ece241_2013_q2": {
+      "task_id": "ece241_2013_q2",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "ece241_2013_q4": {
+      "task_id": "ece241_2013_q4",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "ece241_2013_q7": {
+      "task_id": "ece241_2013_q7",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ece241_2013_q7_0.v",
+        "verilog-eval-v2/plan_output/ece241_2013_q7_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ece241_2013_q7_0.sv",
+        "verilog-eval-v2/plan_output/ece241_2013_q7_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ece241_2013_q8": {
+      "task_id": "ece241_2013_q8",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ece241_2013_q8_0.v",
+        "verilog-eval-v2/plan_output/ece241_2013_q8_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ece241_2013_q8_0.sv",
+        "verilog-eval-v2/plan_output/ece241_2013_q8_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ece241_2014_q1c": {
+      "task_id": "ece241_2014_q1c",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q1c_0.v",
+        "verilog-eval-v2/plan_output/ece241_2014_q1c_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q1c_0.sv",
+        "verilog-eval-v2/plan_output/ece241_2014_q1c_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ece241_2014_q3": {
+      "task_id": "ece241_2014_q3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q3_0.v",
+        "verilog-eval-v2/plan_output/ece241_2014_q3_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q3_0.sv",
+        "verilog-eval-v2/plan_output/ece241_2014_q3_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q3_0.log",
+        "verilog-eval-v2/plan_output/ece241_2014_q3_0.log"
+      ],
+      "status": "success",
+      "errors": [
+        "syntax_error",
+        "syntax_error"
+      ],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ece241_2014_q4": {
+      "task_id": "ece241_2014_q4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q4_0.v",
+        "verilog-eval-v2/plan_output/ece241_2014_q4_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q4_0.sv",
+        "verilog-eval-v2/plan_output/ece241_2014_q4_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ece241_2014_q5a": {
+      "task_id": "ece241_2014_q5a",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "ece241_2014_q5b": {
+      "task_id": "ece241_2014_q5b",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q5b_0.v",
+        "verilog-eval-v2/plan_output/ece241_2014_q5b_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ece241_2014_q5b_0.sv",
+        "verilog-eval-v2/plan_output/ece241_2014_q5b_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "edgecapture": {
+      "task_id": "edgecapture",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/edgecapture_0.v",
+        "verilog-eval-v2/plan_output/edgecapture_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/edgecapture_0.sv",
+        "verilog-eval-v2/plan_output/edgecapture_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "edgedetect": {
+      "task_id": "edgedetect",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/edgedetect_0.v",
+        "verilog-eval-v2/plan_output/edgedetect_0.v",
+        "verilog-eval-v2/plan_output/edgedetect2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/edgedetect_0.sv",
+        "verilog-eval-v2/plan_output/edgedetect_0.sv",
+        "verilog-eval-v2/plan_output/edgedetect2_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpkrb3onkf/Prob054_edgedetect_test.sv:89: error: port ``pedge'' is not a port of good1.\n1 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "edgedetect2": {
+      "task_id": "edgedetect2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/edgedetect2_0.v",
+        "verilog-eval-v2/plan_output/edgedetect2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/edgedetect2_0.sv",
+        "verilog-eval-v2/plan_output/edgedetect2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fadd": {
+      "task_id": "fadd",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fadd_0.v",
+        "verilog-eval-v2/plan_output/fadd_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fadd_0.sv",
+        "verilog-eval-v2/plan_output/fadd_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm1": {
+      "task_id": "fsm1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm1_0.v",
+        "verilog-eval-v2/plan_output/fsm1s_0.v",
+        "verilog-eval-v2/plan_output/fsm1_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm1_0.sv",
+        "verilog-eval-v2/plan_output/fsm1s_0.sv",
+        "verilog-eval-v2/plan_output/fsm1_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp316bzcx2/Prob107_fsm1s_test.sv:122: error: port ``reset'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp316bzcx2/Prob107_fsm1s_test.sv:122: warning: Instantiating module TopModule with dangling input port 2 (areset) floating.\n1 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "fsm1s": {
+      "task_id": "fsm1s",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm1s_0.v",
+        "verilog-eval-v2/plan_output/fsm1s_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm1s_0.sv",
+        "verilog-eval-v2/plan_output/fsm1s_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm2": {
+      "task_id": "fsm2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm2_0.v",
+        "verilog-eval-v2/plan_output/fsm2_0.v",
+        "verilog-eval-v2/plan_output/fsm2s_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm2_0.sv",
+        "verilog-eval-v2/plan_output/fsm2s_0.sv",
+        "verilog-eval-v2/plan_output/fsm2_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpzjja0xqx/Prob111_fsm2s_test.sv:120: error: port ``reset'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpzjja0xqx/Prob111_fsm2s_test.sv:120: warning: Instantiating module RefModule with dangling input port 4 (areset) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpzjja0xqx/Prob111_fsm2s_test.sv:127: error: port ``reset'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpzjja0xqx/Prob111_fsm2s_test.sv:127: warning: Instantiating module TopModule with dangling input port 2 (areset) floating.\n2 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "fsm2s": {
+      "task_id": "fsm2s",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm2s_0.v",
+        "verilog-eval-v2/plan_output/fsm2s_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm2s_0.sv",
+        "verilog-eval-v2/plan_output/fsm2s_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm3": {
+      "task_id": "fsm3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm3_0.v",
+        "verilog-eval-v2/plan_output/fsm3onehot_0.v",
+        "verilog-eval-v2/plan_output/fsm3comb_0.v",
+        "verilog-eval-v2/plan_output/fsm3_0.v",
+        "verilog-eval-v2/plan_output/fsm3s_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm3_0.sv",
+        "verilog-eval-v2/plan_output/fsm3onehot_0.sv",
+        "verilog-eval-v2/plan_output/fsm3s_0.sv",
+        "verilog-eval-v2/plan_output/fsm3_0.sv",
+        "verilog-eval-v2/plan_output/fsm3comb_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpkcg5lucn/Prob119_fsm3_test.sv:125: error: port ``areset'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpkcg5lucn/Prob119_fsm3_test.sv:125: warning: Instantiating module RefModule with dangling input port 3 (reset) floating.\n1 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "fsm3comb": {
+      "task_id": "fsm3comb",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm3comb_0.v",
+        "verilog-eval-v2/plan_output/fsm3comb_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm3comb_0.sv",
+        "verilog-eval-v2/plan_output/fsm3comb_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm3onehot": {
+      "task_id": "fsm3onehot",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm3onehot_0.v",
+        "verilog-eval-v2/plan_output/fsm3onehot_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm3onehot_0.sv",
+        "verilog-eval-v2/plan_output/fsm3onehot_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm3s": {
+      "task_id": "fsm3s",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm3s_0.v",
+        "verilog-eval-v2/plan_output/fsm3s_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm3s_0.sv",
+        "verilog-eval-v2/plan_output/fsm3s_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm_hdlc": {
+      "task_id": "fsm_hdlc",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm_hdlc_0.v",
+        "verilog-eval-v2/plan_output/fsm_hdlc_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm_hdlc_0.sv",
+        "verilog-eval-v2/plan_output/fsm_hdlc_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/fsm_hdlc_0.log",
+        "verilog-eval-v2/plan_output/fsm_hdlc_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm_onehot": {
+      "task_id": "fsm_onehot",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm_onehot_0.v",
+        "verilog-eval-v2/plan_output/fsm_onehot_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm_onehot_0.sv",
+        "verilog-eval-v2/plan_output/fsm_onehot_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm_ps2": {
+      "task_id": "fsm_ps2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm_ps2_0.v",
+        "verilog-eval-v2/plan_output/fsm_ps2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm_ps2_0.sv",
+        "verilog-eval-v2/plan_output/fsm_ps2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm_ps2data": {
+      "task_id": "fsm_ps2data",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "fsm_serial": {
+      "task_id": "fsm_serial",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm_serial_0.v",
+        "verilog-eval-v2/plan_output/fsm_serial_0.v",
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm_serial_0.sv",
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.sv",
+        "verilog-eval-v2/plan_output/fsm_serial_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "fsm_serialdata": {
+      "task_id": "fsm_serialdata",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.v",
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.sv",
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.log",
+        "verilog-eval-v2/plan_output/fsm_serialdata_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "gates": {
+      "task_id": "gates",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/gates_0.v",
+        "verilog-eval-v2/plan_output/gates4_0.v",
+        "verilog-eval-v2/plan_output/gatesv100_0.v",
+        "verilog-eval-v2/plan_output/gatesv_0.v",
+        "verilog-eval-v2/plan_output/gates_0.v",
+        "verilog-eval-v2/plan_output/vectorgates_0.v",
+        "verilog-eval-v2/plan_output/gates100_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/gates_0.sv",
+        "verilog-eval-v2/plan_output/vectorgates_0.sv",
+        "verilog-eval-v2/plan_output/gates100_0.sv",
+        "verilog-eval-v2/plan_output/gates4_0.sv",
+        "verilog-eval-v2/plan_output/gatesv_0.sv",
+        "verilog-eval-v2/plan_output/gatesv100_0.sv",
+        "verilog-eval-v2/plan_output/gates_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpqawppl07/Prob087_gates_test.sv:108: error: port ``a'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpqawppl07/Prob087_gates_test.sv:108: error: port ``b'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpqawppl07/Prob087_gates_test.sv:108: error: port ``out_nand'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpqawppl07/Prob087_gates_test.sv:108: error: port ``out_nor'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpqawppl07/Prob087_gates_test.sv:108: error: port ``out_xnor'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpqawppl07/Prob087_gates_test.sv:108: error: port ``out_anotb'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpqawppl07/Prob087_gates_test.sv:108: warning: Instantiating module RefModule with dangling input port 1 (in) floating.\n6 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "gates100": {
+      "task_id": "gates100",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/gates100_0.v",
+        "verilog-eval-v2/plan_output/gates100_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/gates100_0.sv",
+        "verilog-eval-v2/plan_output/gates100_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "gates4": {
+      "task_id": "gates4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/gates4_0.v",
+        "verilog-eval-v2/plan_output/gates4_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/gates4_0.sv",
+        "verilog-eval-v2/plan_output/gates4_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "gatesv": {
+      "task_id": "gatesv",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/gatesv_0.v",
+        "verilog-eval-v2/plan_output/gatesv100_0.v",
+        "verilog-eval-v2/plan_output/gatesv_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/gatesv_0.sv",
+        "verilog-eval-v2/plan_output/gatesv_0.sv",
+        "verilog-eval-v2/plan_output/gatesv100_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "gatesv100": {
+      "task_id": "gatesv100",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/gatesv100_0.v",
+        "verilog-eval-v2/plan_output/gatesv100_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/gatesv100_0.sv",
+        "verilog-eval-v2/plan_output/gatesv100_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "gshare": {
+      "task_id": "gshare",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "hadd": {
+      "task_id": "hadd",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/hadd_0.v",
+        "verilog-eval-v2/plan_output/hadd_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/hadd_0.sv",
+        "verilog-eval-v2/plan_output/hadd_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "history_shift": {
+      "task_id": "history_shift",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/history_shift_0.v",
+        "verilog-eval-v2/plan_output/history_shift_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/history_shift_0.sv",
+        "verilog-eval-v2/plan_output/history_shift_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "kmap1": {
+      "task_id": "kmap1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/kmap1_0.v",
+        "verilog-eval-v2/plan_output/kmap1_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/kmap1_0.sv",
+        "verilog-eval-v2/plan_output/kmap1_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "kmap2": {
+      "task_id": "kmap2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/kmap2_0.v",
+        "verilog-eval-v2/plan_output/kmap2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/kmap2_0.sv",
+        "verilog-eval-v2/plan_output/kmap2_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/kmap2_0.log",
+        "verilog-eval-v2/plan_output/kmap2_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "kmap3": {
+      "task_id": "kmap3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/kmap3_0.v",
+        "verilog-eval-v2/plan_output/kmap3_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/kmap3_0.sv",
+        "verilog-eval-v2/plan_output/kmap3_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/kmap3_0.log",
+        "verilog-eval-v2/plan_output/kmap3_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "kmap4": {
+      "task_id": "kmap4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/kmap4_0.v",
+        "verilog-eval-v2/plan_output/kmap4_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/kmap4_0.sv",
+        "verilog-eval-v2/plan_output/kmap4_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "lemmings1": {
+      "task_id": "lemmings1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/lemmings1_0.v",
+        "verilog-eval-v2/plan_output/lemmings1_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/lemmings1_0.sv",
+        "verilog-eval-v2/plan_output/lemmings1_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "lemmings2": {
+      "task_id": "lemmings2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/lemmings2_0.v",
+        "verilog-eval-v2/plan_output/lemmings2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/lemmings2_0.sv",
+        "verilog-eval-v2/plan_output/lemmings2_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/lemmings2_0.log",
+        "verilog-eval-v2/plan_output/lemmings2_0.log"
+      ],
+      "status": "success",
+      "errors": [
+        "syntax_error",
+        "syntax_error"
+      ],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "lemmings3": {
+      "task_id": "lemmings3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/lemmings3_0.v",
+        "verilog-eval-v2/plan_output/lemmings3_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/lemmings3_0.sv",
+        "verilog-eval-v2/plan_output/lemmings3_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/lemmings3_0.log",
+        "verilog-eval-v2/plan_output/lemmings3_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "lemmings4": {
+      "task_id": "lemmings4",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "lfsr32": {
+      "task_id": "lfsr32",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/lfsr32_0.v",
+        "verilog-eval-v2/plan_output/lfsr32_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/lfsr32_0.sv",
+        "verilog-eval-v2/plan_output/lfsr32_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/lfsr32_0.log",
+        "verilog-eval-v2/plan_output/lfsr32_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "lfsr5": {
+      "task_id": "lfsr5",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/lfsr5_0.v",
+        "verilog-eval-v2/plan_output/lfsr5_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/lfsr5_0.sv",
+        "verilog-eval-v2/plan_output/lfsr5_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q3": {
+      "task_id": "m2014_q3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q3_0.v",
+        "verilog-eval-v2/plan_output/m2014_q3_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q3_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q3_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/m2014_q3_0.log",
+        "verilog-eval-v2/plan_output/m2014_q3_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4a": {
+      "task_id": "m2014_q4a",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4a_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4a_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4a_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4a_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4b": {
+      "task_id": "m2014_q4b",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4b_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4b_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4b_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4b_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4c": {
+      "task_id": "m2014_q4c",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4c_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4c_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4c_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4c_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4d": {
+      "task_id": "m2014_q4d",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4d_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4d_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4d_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4d_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4e": {
+      "task_id": "m2014_q4e",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4e_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4e_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4e_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4e_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4f": {
+      "task_id": "m2014_q4f",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4f_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4f_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4f_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4f_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4g": {
+      "task_id": "m2014_q4g",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4g_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4g_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4g_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4g_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4h": {
+      "task_id": "m2014_q4h",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4h_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4h_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4h_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4h_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4i": {
+      "task_id": "m2014_q4i",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4i_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4i_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4i_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4i_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4j": {
+      "task_id": "m2014_q4j",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4j_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4j_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4j_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4j_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q4k": {
+      "task_id": "m2014_q4k",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q4k_0.v",
+        "verilog-eval-v2/plan_output/m2014_q4k_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q4k_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q4k_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q6": {
+      "task_id": "m2014_q6",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q6_0.v",
+        "verilog-eval-v2/plan_output/m2014_q6b_0.v",
+        "verilog-eval-v2/plan_output/m2014_q6c_0.v",
+        "verilog-eval-v2/plan_output/m2014_q6_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q6_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q6b_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q6_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q6c_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/m2014_q6_0.log",
+        "verilog-eval-v2/plan_output/m2014_q6c_0.log",
+        "verilog-eval-v2/plan_output/m2014_q6_0.log"
+      ],
+      "status": "partial",
+      "errors": [
+        "syntax_error",
+        "syntax_error",
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5ogkei55/Prob135_m2014_q6b_test.sv:68: error: port ``y'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5ogkei55/Prob135_m2014_q6b_test.sv:68: error: port ``Y1'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5ogkei55/Prob135_m2014_q6b_test.sv:68: warning: Instantiating module TopModule with dangling input port 1 (clk) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmp5ogkei55/Prob135_m2014_q6b_test.sv:68: warning: Instantiating module TopModule with dangling input port 2 (reset) floating.\n2 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "m2014_q6b": {
+      "task_id": "m2014_q6b",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q6b_0.v",
+        "verilog-eval-v2/plan_output/m2014_q6b_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q6b_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q6b_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "m2014_q6c": {
+      "task_id": "m2014_q6c",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/m2014_q6c_0.v",
+        "verilog-eval-v2/plan_output/m2014_q6c_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/m2014_q6c_0.sv",
+        "verilog-eval-v2/plan_output/m2014_q6c_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/m2014_q6c_0.log",
+        "verilog-eval-v2/plan_output/m2014_q6c_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mt2015_eq2": {
+      "task_id": "mt2015_eq2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mt2015_eq2_0.v",
+        "verilog-eval-v2/plan_output/mt2015_eq2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mt2015_eq2_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_eq2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mt2015_muxdff": {
+      "task_id": "mt2015_muxdff",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.v",
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.log",
+        "verilog-eval-v2/plan_output/mt2015_muxdff_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mt2015_q4": {
+      "task_id": "mt2015_q4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mt2015_q4_0.v",
+        "verilog-eval-v2/plan_output/mt2015_q4_0.v",
+        "verilog-eval-v2/plan_output/mt2015_q4a_0.v",
+        "verilog-eval-v2/plan_output/mt2015_q4b_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mt2015_q4_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_q4_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_q4a_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_q4b_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mt2015_q4a": {
+      "task_id": "mt2015_q4a",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mt2015_q4a_0.v",
+        "verilog-eval-v2/plan_output/mt2015_q4a_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mt2015_q4a_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_q4a_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mt2015_q4b": {
+      "task_id": "mt2015_q4b",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mt2015_q4b_0.v",
+        "verilog-eval-v2/plan_output/mt2015_q4b_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mt2015_q4b_0.sv",
+        "verilog-eval-v2/plan_output/mt2015_q4b_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mux256to1": {
+      "task_id": "mux256to1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mux256to1_0.v",
+        "verilog-eval-v2/plan_output/mux256to1v_0.v",
+        "verilog-eval-v2/plan_output/mux256to1_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mux256to1_0.sv",
+        "verilog-eval-v2/plan_output/mux256to1v_0.sv",
+        "verilog-eval-v2/plan_output/mux256to1_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mux256to1v": {
+      "task_id": "mux256to1v",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mux256to1v_0.v",
+        "verilog-eval-v2/plan_output/mux256to1v_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mux256to1v_0.sv",
+        "verilog-eval-v2/plan_output/mux256to1v_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mux2to1": {
+      "task_id": "mux2to1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mux2to1_0.v",
+        "verilog-eval-v2/plan_output/mux2to1_0.v",
+        "verilog-eval-v2/plan_output/mux2to1v_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mux2to1_0.sv",
+        "verilog-eval-v2/plan_output/mux2to1_0.sv",
+        "verilog-eval-v2/plan_output/mux2to1v_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mux2to1v": {
+      "task_id": "mux2to1v",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mux2to1v_0.v",
+        "verilog-eval-v2/plan_output/mux2to1v_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mux2to1v_0.sv",
+        "verilog-eval-v2/plan_output/mux2to1v_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "mux9to1v": {
+      "task_id": "mux9to1v",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/mux9to1v_0.v",
+        "verilog-eval-v2/plan_output/mux9to1v_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/mux9to1v_0.sv",
+        "verilog-eval-v2/plan_output/mux9to1v_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "norgate": {
+      "task_id": "norgate",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/norgate_0.v",
+        "verilog-eval-v2/plan_output/xnorgate_0.v",
+        "verilog-eval-v2/plan_output/norgate_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/norgate_0.sv",
+        "verilog-eval-v2/plan_output/norgate_0.sv",
+        "verilog-eval-v2/plan_output/xnorgate_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "notgate": {
+      "task_id": "notgate",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/notgate_0.v",
+        "verilog-eval-v2/plan_output/notgate_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/notgate_0.sv",
+        "verilog-eval-v2/plan_output/notgate_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "popcount255": {
+      "task_id": "popcount255",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/popcount255_0.v",
+        "verilog-eval-v2/plan_output/popcount255_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/popcount255_0.sv",
+        "verilog-eval-v2/plan_output/popcount255_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "popcount3": {
+      "task_id": "popcount3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/popcount3_0.v",
+        "verilog-eval-v2/plan_output/popcount3_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/popcount3_0.sv",
+        "verilog-eval-v2/plan_output/popcount3_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "reduction": {
+      "task_id": "reduction",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/reduction_0.v",
+        "verilog-eval-v2/plan_output/reduction_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/reduction_0.sv",
+        "verilog-eval-v2/plan_output/reduction_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "review2015_count1k": {
+      "task_id": "review2015_count1k",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/review2015_count1k_0.v",
+        "verilog-eval-v2/plan_output/review2015_count1k_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/review2015_count1k_0.sv",
+        "verilog-eval-v2/plan_output/review2015_count1k_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "review2015_fancytimer": {
+      "task_id": "review2015_fancytimer",
+      "verilog_files": [],
+      "sv_files": [],
+      "log_files": [],
+      "status": "failed",
+      "errors": [],
+      "compilation_success": false,
+      "simulation_success": false
+    },
+    "review2015_fsm": {
+      "task_id": "review2015_fsm",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmshift_0.v",
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.v",
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmshift_0.sv",
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.sv",
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.log",
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.log"
+      ],
+      "status": "partial",
+      "errors": [
+        "syntax_error",
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: error: port ``clk'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: error: port ``reset'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: error: port ``data'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: error: port ``start_shifting'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: warning: Instantiating module RefModule with dangling input port 1 (d) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: warning: Instantiating module RefModule with dangling input port 2 (done_counting) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: warning: Instantiating module RefModule with dangling input port 3 (ack) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:120: warning: Instantiating module RefModule with dangling input port 4 (state) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:126: error: port ``data'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpltzy8x4u/Prob096_review2015_fsmseq_test.sv:126: error: port ``start_shifting'' is not a port of top_module1.\n6 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "review2015_fsmonehot": {
+      "task_id": "review2015_fsmonehot",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.v",
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.sv",
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.log",
+        "verilog-eval-v2/plan_output/review2015_fsmonehot_0.log"
+      ],
+      "status": "success",
+      "errors": [
+        "syntax_error",
+        "syntax_error"
+      ],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "review2015_fsmseq": {
+      "task_id": "review2015_fsmseq",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.v",
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.sv",
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.log",
+        "verilog-eval-v2/plan_output/review2015_fsmseq_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "review2015_fsmshift": {
+      "task_id": "review2015_fsmshift",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmshift_0.v",
+        "verilog-eval-v2/plan_output/review2015_fsmshift_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/review2015_fsmshift_0.sv",
+        "verilog-eval-v2/plan_output/review2015_fsmshift_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "review2015_shiftcount": {
+      "task_id": "review2015_shiftcount",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/review2015_shiftcount_0.v",
+        "verilog-eval-v2/plan_output/review2015_shiftcount_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/review2015_shiftcount_0.sv",
+        "verilog-eval-v2/plan_output/review2015_shiftcount_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "ringer": {
+      "task_id": "ringer",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/ringer_0.v",
+        "verilog-eval-v2/plan_output/ringer_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/ringer_0.sv",
+        "verilog-eval-v2/plan_output/ringer_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "rotate100": {
+      "task_id": "rotate100",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/rotate100_0.v",
+        "verilog-eval-v2/plan_output/rotate100_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/rotate100_0.sv",
+        "verilog-eval-v2/plan_output/rotate100_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "rule110": {
+      "task_id": "rule110",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/rule110_0.v",
+        "verilog-eval-v2/plan_output/rule110_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/rule110_0.sv",
+        "verilog-eval-v2/plan_output/rule110_0.sv"
+      ],
+      "log_files": [
+        "verilog-eval-v2/plan_output/rule110_0.log",
+        "verilog-eval-v2/plan_output/rule110_0.log"
+      ],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "rule90": {
+      "task_id": "rule90",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/rule90_0.v",
+        "verilog-eval-v2/plan_output/rule90_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/rule90_0.sv",
+        "verilog-eval-v2/plan_output/rule90_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "shift18": {
+      "task_id": "shift18",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/shift18_0.v",
+        "verilog-eval-v2/plan_output/shift18_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/shift18_0.sv",
+        "verilog-eval-v2/plan_output/shift18_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "shift4": {
+      "task_id": "shift4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/shift4_0.v",
+        "verilog-eval-v2/plan_output/shift4_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/shift4_0.sv",
+        "verilog-eval-v2/plan_output/shift4_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "step_one": {
+      "task_id": "step_one",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/step_one_0.v",
+        "verilog-eval-v2/plan_output/step_one_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/step_one_0.sv",
+        "verilog-eval-v2/plan_output/step_one_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "thermostat": {
+      "task_id": "thermostat",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/thermostat_0.v",
+        "verilog-eval-v2/plan_output/thermostat_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/thermostat_0.sv",
+        "verilog-eval-v2/plan_output/thermostat_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "timer": {
+      "task_id": "timer",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/timer_0.v",
+        "verilog-eval-v2/plan_output/timer_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/timer_0.sv",
+        "verilog-eval-v2/plan_output/timer_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpf7xodw0i/Prob080_timer_test.sv:100: error: port ``load'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpf7xodw0i/Prob080_timer_test.sv:100: error: port ``tc'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpf7xodw0i/Prob080_timer_test.sv:100: warning: Instantiating module RefModule with dangling input port 2 (reset) floating.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpf7xodw0i/Prob080_timer_test.sv:100: warning: Port 3 (data) of RefModule expects 1 bits, got 10.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpf7xodw0i/Prob080_timer_test.sv:100:        : Pruning 9 high bits of the expression.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpf7xodw0i/Prob080_timer_test.sv:100: warning: Instantiating module RefModule with dangling input port 7 (ack) floating.\n2 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "truthtable1": {
+      "task_id": "truthtable1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/truthtable1_0.v",
+        "verilog-eval-v2/plan_output/truthtable1_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/truthtable1_0.sv",
+        "verilog-eval-v2/plan_output/truthtable1_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vector0": {
+      "task_id": "vector0",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vector0_0.v",
+        "verilog-eval-v2/plan_output/vector0_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vector0_0.sv",
+        "verilog-eval-v2/plan_output/vector0_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vector1": {
+      "task_id": "vector1",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vector1_0.v",
+        "verilog-eval-v2/plan_output/vector1_0.v",
+        "verilog-eval-v2/plan_output/vector100r_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vector1_0.sv",
+        "verilog-eval-v2/plan_output/vector100r_0.sv",
+        "verilog-eval-v2/plan_output/vector1_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpu597gz9t/Prob015_vector1_test.sv:83: error: port ``out_hi'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpu597gz9t/Prob015_vector1_test.sv:83: error: port ``out_lo'' is not a port of good1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpu597gz9t/Prob015_vector1_test.sv:83: warning: Port 1 (in) of RefModule expects 100 bits, got 16.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpu597gz9t/Prob015_vector1_test.sv:83:        : Padding 84 high bits of the port.\n2 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "vector100r": {
+      "task_id": "vector100r",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vector100r_0.v",
+        "verilog-eval-v2/plan_output/vector100r_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vector100r_0.sv",
+        "verilog-eval-v2/plan_output/vector100r_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vector2": {
+      "task_id": "vector2",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vector2_0.v",
+        "verilog-eval-v2/plan_output/vector2_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vector2_0.sv",
+        "verilog-eval-v2/plan_output/vector2_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vector3": {
+      "task_id": "vector3",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vector3_0.v",
+        "verilog-eval-v2/plan_output/vector3_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vector3_0.sv",
+        "verilog-eval-v2/plan_output/vector3_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vector4": {
+      "task_id": "vector4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vector4_0.v",
+        "verilog-eval-v2/plan_output/vector4_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vector4_0.sv",
+        "verilog-eval-v2/plan_output/vector4_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vector5": {
+      "task_id": "vector5",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vector5_0.v",
+        "verilog-eval-v2/plan_output/vector5_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vector5_0.sv",
+        "verilog-eval-v2/plan_output/vector5_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vectorgates": {
+      "task_id": "vectorgates",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vectorgates_0.v",
+        "verilog-eval-v2/plan_output/vectorgates_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vectorgates_0.sv",
+        "verilog-eval-v2/plan_output/vectorgates_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "vectorr": {
+      "task_id": "vectorr",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/vectorr_0.v",
+        "verilog-eval-v2/plan_output/vectorr_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/vectorr_0.sv",
+        "verilog-eval-v2/plan_output/vectorr_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "wire": {
+      "task_id": "wire",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/wire_0.v",
+        "verilog-eval-v2/plan_output/wire_decl_0.v",
+        "verilog-eval-v2/plan_output/wire_0.v",
+        "verilog-eval-v2/plan_output/wire4_0.v",
+        "verilog-eval-v2/plan_output/wire_decl_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/wire_decl_0.sv",
+        "verilog-eval-v2/plan_output/wire_0.sv",
+        "verilog-eval-v2/plan_output/wire_decl_0.sv",
+        "verilog-eval-v2/plan_output/wire_0.sv",
+        "verilog-eval-v2/plan_output/wire4_0.sv"
+      ],
+      "log_files": [],
+      "status": "partial",
+      "errors": [
+        "compilation_failed: /var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpom9l7kjf/Prob077_wire_decl_test.sv:101: error: port ``a'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpom9l7kjf/Prob077_wire_decl_test.sv:101: error: port ``b'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpom9l7kjf/Prob077_wire_decl_test.sv:101: error: port ``c'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpom9l7kjf/Prob077_wire_decl_test.sv:101: error: port ``d'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpom9l7kjf/Prob077_wire_decl_test.sv:101: error: port ``out_n'' is not a port of top_module1.\n/var/folders/mk/flswsh894j7377w734g2vxjh0000gn/T/tmpom9l7kjf/Prob077_wire_decl_test.sv:101: warning: Instantiating module TopModule with dangling input port 1 (in) floating.\n5 error(s) during elaboration.\n"
+      ],
+      "compilation_success": true,
+      "simulation_success": false
+    },
+    "wire4": {
+      "task_id": "wire4",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/wire4_0.v",
+        "verilog-eval-v2/plan_output/wire4_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/wire4_0.sv",
+        "verilog-eval-v2/plan_output/wire4_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "wire_decl": {
+      "task_id": "wire_decl",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/wire_decl_0.v",
+        "verilog-eval-v2/plan_output/wire_decl_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/wire_decl_0.sv",
+        "verilog-eval-v2/plan_output/wire_decl_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "xnorgate": {
+      "task_id": "xnorgate",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/xnorgate_0.v",
+        "verilog-eval-v2/plan_output/xnorgate_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/xnorgate_0.sv",
+        "verilog-eval-v2/plan_output/xnorgate_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    },
+    "zero": {
+      "task_id": "zero",
+      "verilog_files": [
+        "verilog-eval-v2/plan_output/zero_0.v",
+        "verilog-eval-v2/plan_output/zero_0.v"
+      ],
+      "sv_files": [
+        "verilog-eval-v2/plan_output/zero_0.sv",
+        "verilog-eval-v2/plan_output/zero_0.sv"
+      ],
+      "log_files": [],
+      "status": "success",
+      "errors": [],
+      "compilation_success": true,
+      "simulation_success": true
+    }
+  },
+  "error_types": {
+    "syntax_error": 11
+  },
+  "file_types": {
+    "verilog": 337,
+    "systemverilog": 337
+  }
+}

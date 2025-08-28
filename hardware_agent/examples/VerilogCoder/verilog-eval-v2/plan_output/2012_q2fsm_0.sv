@@ -151,6 +151,8 @@ module RefModule (
 endmodule
 
 
+// The FSM based on the state diagram provided has 6 states: A, B, C, D, E, and F.
+
 module TopModule
 (
   input  logic clk,
@@ -159,47 +161,42 @@ module TopModule
   output logic z
 );
 
-  // State encoding
-  localparam [2:0] STATE_A = 3'b000;
-  localparam [2:0] STATE_B = 3'b001;
-  localparam [2:0] STATE_C = 3'b010;
-  localparam [2:0] STATE_D = 3'b011;
-  localparam [2:0] STATE_E = 3'b100;
-  localparam [2:0] STATE_F = 3'b101;
+// State encoding
+localparam STATE_A = 3'b000;
+localparam STATE_B = 3'b001;
+localparam STATE_C = 3'b010;
+localparam STATE_D = 3'b011;
+localparam STATE_E = 3'b100;
+localparam STATE_F = 3'b101;
 
-  // State register
-  logic [2:0] state;
-  logic [2:0] state_next;
+// State register
+logic [2:0] state;
+logic [2:0] state_next;
 
-  // State flip-flop logic block
-  always @(posedge clk) begin
-    if (reset)
-      state <= STATE_A;
-    else
-      state <= state_next;
+// State transition logic
+always @(posedge clk) begin
+  if (reset) begin
+    state <= STATE_A;
+  end else begin
+    state <= state_next;
   end
+end
 
-  // Next state logic block
-  always @(*) begin
-    state_next = state;
-    case (state)
-      STATE_A: state_next = w ? STATE_B : STATE_A;
-      STATE_B: state_next = w ? STATE_C : STATE_D;
-      STATE_C: state_next = w ? STATE_E : STATE_D;
-      STATE_D: state_next = w ? STATE_F : STATE_A;
-      STATE_E: state_next = w ? STATE_E : STATE_D;
-      STATE_F: state_next = w ? STATE_C : STATE_D;
-    endcase
-  end
+// Next state logic
+always @(*) begin
+  state_next = state;
+  case (state)
+    STATE_A: state_next = (w) ? STATE_B : STATE_A;
+    STATE_B: state_next = (w) ? STATE_C : STATE_D;
+    STATE_C: state_next = (w) ? STATE_E : STATE_D;
+    STATE_D: state_next = (w) ? STATE_F : STATE_A;
+    STATE_E: state_next = (w) ? STATE_E : STATE_D;
+    STATE_F: state_next = (w) ? STATE_C : STATE_D;
+    default: state_next = STATE_A;
+  endcase
+end
 
-  // Output logic block
-  always @(*) begin
-    z = 1'b0;
-    case (state)
-      STATE_E: z = 1'b1;
-      STATE_F: z = 1'b1;
-      default: z = 1'b0;
-    endcase
-  end
+// Output logic using continuous assignment
+assign z = (state == STATE_E) || (state == STATE_F);
 
 endmodule

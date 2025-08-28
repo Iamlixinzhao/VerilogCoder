@@ -7,37 +7,36 @@ module TopModule
   output logic [1:0] state
 );
 
-  // 2-bit register for the state of the saturating counter
+  // State register
+  logic [1:0] state_next;
   logic [1:0] state_reg;
-  logic [1:0] next_state;
 
-  // Asynchronous reset
   always @(posedge clk or posedge areset) begin
-    if (areset)
-      state_reg <= 2'b01;
-    else
-      state_reg <= next_state;
-  end
-
-  // Logic to increment the counter
-  always @(*) begin
-    next_state = state_reg; // By default, keep the state unchanged
-    if (train_valid) begin
-      if (train_taken) begin
-        if (state_reg < 3)
-          next_state = state_reg + 1; // Increment the counter
-        else
-          next_state = 3; // Saturate at 3
-      end
-      else begin
-        if (state_reg > 0)
-          next_state = state_reg - 1; // Decrement the counter
-        else
-          next_state = 0; // Saturate at 0
-      end
+    if (areset) begin
+      state_reg <= 2'b01; // Reset to weakly not-taken
+    end else begin
+      state_reg <= state_next;
     end
   end
 
+  // Next state combinational logic
+  always @(*) begin
+    state_next = state_reg;
+    if (train_valid) begin
+      if (train_taken) begin
+        if (state_reg < 2'b11) begin
+          state_next = state_reg + 1;
+        end
+      end else begin
+        if (state_reg > 2'b00) begin
+          state_next = state_reg - 1;
+        end
+      end
+    end
+    // No need to handle train_valid = 0 case explicitly as state_next = state_reg by default
+  end
+
+  // Assign the current counter value to the output port state
   assign state = state_reg;
 
 endmodule

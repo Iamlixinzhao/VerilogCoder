@@ -6,22 +6,24 @@ module TopModule
   output logic Q
 );
 
-  // Register to hold the current state of the output Q
-  logic Q_reg;
+  // Internal signal for storing the state of Q
+  logic Qold;
 
-  // Sequential logic
-  always @(posedge clk) begin
-    if (j == 0 && k == 0)
-      Q_reg <= Q_reg; // Q = Qold
-    else if (j == 0 && k == 1)
-      Q_reg <= 0; // Q = 0
-    else if (j == 1 && k == 0)
-      Q_reg <= 1; // Q = 1
-    else if (j == 1 && k == 1)
-      Q_reg <= ~Q_reg; // Q = ~Qold
+  initial begin
+    Qold = 0; // Initialize Qold to a known state
   end
 
-  // Structural connections
-  assign Q = Q_reg;
+  always @(posedge clk) begin
+    if (j == 0 && k == 0) begin
+      Q <= Q; // No change
+    end else if (j == 0 && k == 1) begin
+      Q <= 0; // Reset
+    end else if (j == 1 && k == 0) begin
+      Q <= 1; // Set
+    end else if (j == 1 && k == 1) begin
+      Q <= ~Q; // Toggle using current Q
+    end
+    Qold <= Q; // Update Qold to current Q after operations
+  end
 
 endmodule

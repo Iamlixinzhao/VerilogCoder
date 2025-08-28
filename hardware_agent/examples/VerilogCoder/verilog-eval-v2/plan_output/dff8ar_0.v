@@ -6,21 +6,13 @@ module TopModule
   output logic [7:0] q
 );
 
-  // Sequential logic
-  logic [7:0] q_reg;
-
-  genvar i;
-  generate
-    for (i = 0; i < 8; i = i + 1) begin : dff
-      always @( posedge clk or posedge areset ) begin
-        if ( areset )
-          q_reg[i] <= 1'b0;
-        else
-          q_reg[i] <= d[i];
-      end
+  // Sequential logic for 8 D flip-flops with asynchronous reset
+  always @(posedge clk or posedge areset) begin
+    if (areset) begin
+      q <= 8'b0;
+    end else begin
+      q <= d;
     end
-  endgenerate
-
-  assign q = q_reg;
+  end
 
 endmodule

@@ -14,28 +14,17 @@ module TopModule
   output logic p2y
 );
 
-  // Internal wire for the first AND operation
-  logic p1_and1;
-  // Internal wire for the second AND operation
-  logic p1_and2;
+  // Intermediate signals for AND gates
+  logic and1_out, and2_out, and3_out, and4_out;
 
-  // Combinational logic for the first AND operation
-  assign p1_and1 = p1a & p1b & p1c;
-  // Combinational logic for the second AND operation
-  assign p1_and2 = p1d & p1e & p1f;
+  // AND gate implementations
+  assign and1_out = p1a & p1b & p1c; // First 3-input AND gate implementation
+  assign and2_out = p1d & p1e & p1f; // Second 3-input AND gate implementation
+  assign and3_out = p2a & p2b;       // First 2-input AND gate implementation
+  assign and4_out = p2c & p2d;       // Second 2-input AND gate implementation
 
-  // Combinational logic for the OR operation
-  assign p1y = p1_and1 | p1_and2;
-
-  // Declare an internal wire for the AND operation between p2a and p2b
-  logic p2_and1;
-  assign p2_and1 = p2a & p2b;
-
-  // Declare another internal wire for the AND operation between p2c and p2d
-  logic p2_and2;
-  assign p2_and2 = p2c & p2d;
-
-  // Combinational logic for the OR operation
-  assign p2y = p2_and1 | p2_and2;
+  // OR gate implementations
+  assign p1y = and1_out | and2_out; // OR gate for p1y using two 3-input AND gates
+  assign p2y = and3_out | and4_out; // OR gate for p2y using two 2-input AND gates
 
 endmodule

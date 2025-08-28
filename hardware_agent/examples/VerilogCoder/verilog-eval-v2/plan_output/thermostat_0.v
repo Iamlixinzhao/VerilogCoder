@@ -9,19 +9,29 @@ module TopModule
   output logic fan
 );
 
-  // Combinational logic for heater control
+  // Combinational logic for controlling heater, aircon, and fan
   always @(*) begin
-    heater = (mode && too_cold) ? 1'b1 : 1'b0;
-  end
+    // Default assignments
+    heater = 1'b0;
+    aircon = 1'b0;
+    fan = 1'b0;
 
-  // Combinational logic for air conditioner control
-  always @(*) begin
-    aircon = (!mode && too_hot) ? 1'b1 : 1'b0;
-  end
+    if (mode) begin
+      // Heating mode
+      if (too_cold) begin
+        heater = 1'b1;
+      end
+    end else begin
+      // Cooling mode
+      if (too_hot) begin
+        aircon = 1'b1;
+      end
+    end
 
-  // Combinational logic for fan control
-  always @(*) begin
-    fan = (heater || aircon || fan_on) ? 1'b1 : 1'b0;
+    // Fan logic
+    if (heater || aircon || fan_on) begin
+      fan = 1'b1;
+    end
   end
 
 endmodule

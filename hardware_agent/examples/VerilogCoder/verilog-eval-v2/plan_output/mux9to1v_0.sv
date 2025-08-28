@@ -224,19 +224,19 @@ module TopModule
   output logic [15:0] out
 );
 
-  // Combinational logic for multiplexer
   always @(*) begin
-    case(sel)
-      4'b0000: out = a;
-      4'b0001: out = b;
-      4'b0010: out = c;
-      4'b0011: out = d;
-      4'b0100: out = e;
-      4'b0101: out = f;
-      4'b0110: out = g;
-      4'b0111: out = h;
-      4'b1000: out = i; // Added this line to select 'i' when 'sel' equals 8
-      default: out = 16'b1111111111111111; // For the unused cases (sel=9 to 15), set all output bits to '1'
+    case (sel)
+      4'd0: out = a;
+      4'd1: out = b;
+      4'd2: out = c;
+      4'd3: out = d;
+      4'd4: out = e;
+      4'd5: out = f;
+      4'd6: out = g;
+      4'd7: out = h;
+      4'd8: out = i;
+      default: out = 16'hFFFF; // Set all bits to '1' for sel=9 to 15
     endcase
   end
+
 endmodule

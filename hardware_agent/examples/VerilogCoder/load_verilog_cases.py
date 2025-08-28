@@ -123,8 +123,11 @@ def load_verilog_eval2_cases(file_dir: str, task_ids: set[str]=set(), verbose_le
         problem_fields = file_name_fields[0].split('_')
         task_id = '_'.join(problem_fields[1:-1])
         content_type = problem_fields[-1]
-        if task_id not in task_ids:
+        
+        # If task_ids is empty, include all tasks; otherwise, filter by task_ids
+        if len(task_ids) > 0 and task_id not in task_ids:
             continue
+            
         print('reading ', file_dir, file)
         with open(file_dir + "/" + file, 'r') as f:
             text = f.read()

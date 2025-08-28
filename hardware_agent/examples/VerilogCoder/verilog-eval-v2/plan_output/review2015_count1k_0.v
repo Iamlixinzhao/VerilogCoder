@@ -5,18 +5,22 @@ module TopModule
   output logic [9:0] q
 );
 
-  // 10-bit register to hold the current count value
-  logic [9:0] count_reg;
+  // Counter register
+  logic [9:0] count;
 
   always @(posedge clk) begin
-    if (reset)
-      count_reg <= 10'b0; // reset the counter to 0
-    else if (count_reg == 999)
-      count_reg <= 10'b0; // wrap around to 0 if counter reaches 999
-    else
-      count_reg <= count_reg + 1; // increment the counter
+    if (reset) begin
+      count <= 10'b0;
+    end else begin
+      if (count == 10'd999) begin
+        count <= 10'b0;
+      end else begin
+        count <= count + 1;
+      end
+    end
   end
 
-  assign q = count_reg;
+  // Output assignment
+  assign q = count;
 
 endmodule

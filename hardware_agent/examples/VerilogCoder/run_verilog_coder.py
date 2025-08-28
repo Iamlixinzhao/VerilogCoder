@@ -37,8 +37,29 @@ else:
 
 # Load verilog problem sets
 # Add questions
-# user_task_ids = {'vector4', 'zero'}
-user_task_ids = {'zero'}
+# user_task_ids = {'vector4', 'zero'}  # Single task for testing
+
+# Load all task IDs from file
+def load_task_ids_from_file(filename):
+    """Load task IDs from a text file, one per line"""
+    try:
+        with open(filename, 'r') as f:
+            # Read lines and strip whitespace, filter out empty lines
+            task_ids = [line.strip() for line in f.readlines() if line.strip()]
+        return set(task_ids)
+    except FileNotFoundError:
+        print(f"Warning: Task ID file '{filename}' not found, using default task 'zero'")
+        return {'zero'}
+    except Exception as e:
+        print(f"Error reading task ID file: {e}, using default task 'zero'")
+        return {'zero'}
+
+# Load task IDs from file
+task_id_file = "hardware_agent/examples/VerilogCoder/all_task_ids.txt"
+user_task_ids = load_task_ids_from_file(task_id_file)
+
+print(f"[Info]: Running {len(user_task_ids)} tasks from file: {task_id_file}")
+
 case_manager = VerilogCaseManager(file_path=args.verilog_example_dir, task_ids=user_task_ids)
 
 # llm configurations
@@ -73,26 +94,55 @@ coding_agent = VerilogCoder( task_planner_llm_config=llm_configs["task_planner_l
 
 pass_tasks = []
 failed_tasks = []
-for _ in range(case_manager.total_tasks()):
+total_tasks = case_manager.total_tasks()
+
+print(f"\n[Info]: Starting to process {total_tasks} tasks...")
+print("=" * 60)
+
+for task_num in range(total_tasks):
     cur_task_id = case_manager.get_cur_task_id()
+    
+    print(f"\n[Task {task_num + 1}/{total_tasks}]: Processing '{cur_task_id}'")
+    print("-" * 40)
+    
     # if os.path.exists(args.generate_plan_dir + "/" + cur_task_id + "_plan.json"):
     #    plan_filename = args.generate_plan_dir + "/" + cur_task_id + "_plan.json"
     #    have_plans = True
     # else:
     plan_filename = ""
     have_plans = False
-    success = coding_agent.write_Verilog_module(cur_task_id=cur_task_id,
-                                                spec=case_manager.get_cur_prompt(),
-                                                golden_test_bench=case_manager.get_cur_task_test(),
-                                                plan_filename=plan_filename,
-                                                have_plans = have_plans)
-    if success:
-        pass_tasks.append(cur_task_id)
-    else:
+    
+    try:
+        success = coding_agent.write_Verilog_module(cur_task_id=cur_task_id,
+                                                    spec=case_manager.get_cur_prompt(),
+                                                    golden_test_bench=case_manager.get_cur_task_test(),
+                                                    plan_filename=plan_filename,
+                                                    have_plans=have_plans)
+        if success:
+            pass_tasks.append(cur_task_id)
+            print(f"✅ Task '{cur_task_id}' completed successfully")
+        else:
+            failed_tasks.append(cur_task_id)
+            print(f"❌ Task '{cur_task_id}' failed")
+    except Exception as e:
         failed_tasks.append(cur_task_id)
+        print(f"❌ Task '{cur_task_id}' failed with error: {e}")
+    
     # Next verilog case
     case_manager.next()
+    
+    # Progress update
+    progress = (task_num + 1) / total_tasks * 100
+    print(f"Progress: {progress:.1f}% ({task_num + 1}/{total_tasks})")
 
-print('passed tasks: ', len(pass_tasks), '\n', pass_tasks, '\n')
-print('failed tasks: ', len(failed_tasks), '\n', failed_tasks, '\n')
-print('success rate: ', len(pass_tasks) / case_manager.total_tasks())
+print("\n" + "=" * 60)
+print("🏁 FINAL RESULTS")
+print("=" * 60)
+print(f"✅ Passed tasks: {len(pass_tasks)}")
+if pass_tasks:
+    print("   " + ", ".join(pass_tasks))
+print(f"\n❌ Failed tasks: {len(failed_tasks)}")
+if failed_tasks:
+    print("   " + ", ".join(failed_tasks))
+print(f"\n📊 Success rate: {len(pass_tasks) / total_tasks * 100:.1f}% ({len(pass_tasks)}/{total_tasks})")
+print("=" * 60)

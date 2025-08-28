@@ -1,74 +1,77 @@
-module TopModule(
-    input logic x,
-    input logic y,
-    output logic z
+module ModuleA
+(
+  input  logic x,
+  input  logic y,
+  output logic z
 );
-
-// Outputs from submodules A and B
-logic z_A1;
-logic z_B1;
-logic z_A2; // Output of the second A submodule
-logic z_B2; // Output of the second B submodule
-logic z_OR; // Output of the OR gate
-logic z_AND; // Output of the AND gate
-
-// Instantiate the first A submodule
-A submodule_A1 (
-    .x(x),
-    .y(y),
-    .z(z_A1)
-);
-
-// Instantiate the first B submodule
-B submodule_B1 (
-    .x(x),
-    .y(y),
-    .z(z_B1)
-);
-
-// Instantiate the second A submodule
-A submodule_A2 (
-    .x(x),
-    .y(y),
-    .z(z_A2)
-);
-
-// Instantiate the second B submodule
-B submodule_B2 (
-    .x(x),
-    .y(y),
-    .z(z_B2)
-);
-
-// Connect the outputs of the first A and B submodules to a two-input OR gate
-assign z_OR = z_A1 | z_B1;
-
-// Connect the outputs of the second A and B submodules to a two-input AND gate
-assign z_AND = z_A2 & z_B2;
-
-// Connect the outputs of the OR and AND gates to an XOR gate
-assign z = z_OR ^ z_AND;
-
+  // Implementing the boolean function z = (x^y) & x
+  assign z = (x ^ y) & x;
 endmodule
 
-// Module A definition
-module A(
-    input logic x,
-    input logic y,
-    output logic z
+module ModuleB
+(
+  input  logic x,
+  input  logic y,
+  output logic z
 );
-
-// Implement the boolean function z = (x^y) & x
-assign z = (x ^ y) & x;
-
+  // Implementing the behavior based on the simulation waveform
+  always @(*) begin
+    if (x == 0 && y == 0) begin
+      z = 1;
+    end else if (x == 1 && y == 0) begin
+      z = 0;
+    end else if (x == 0 && y == 1) begin
+      z = 0;
+    end else if (x == 1 && y == 1) begin
+      z = 1;
+    end
+  end
 endmodule
 
-// Corrected Module B definition
-module B(
-    input logic x,
-    input logic y,
-    output logic z
+module TopModule
+(
+  input  logic x,
+  input  logic y,
+  output logic z
 );
-    // Implement the boolean function based on the provided waveform
-    assign z = x ~^ y; // XNOR operation
+
+  // Intermediate signals for submodule outputs
+  logic a1_out, a2_out, b1_out, b2_out;
+  logic or_out, and_out;
+
+  // Submodule A instances
+  ModuleA a1 (
+    .x(x),
+    .y(y),
+    .z(a1_out)
+  );
+
+  ModuleA a2 (
+    .x(x),
+    .y(y),
+    .z(a2_out)
+  );
+
+  // Submodule B instances
+  ModuleB b1 (
+    .x(x),
+    .y(y),
+    .z(b1_out)
+  );
+
+  ModuleB b2 (
+    .x(x),
+    .y(y),
+    .z(b2_out)
+  );
+
+  // OR gate for first pair of A and B submodules
+  assign or_out = a1_out | b1_out;
+
+  // AND gate for second pair of A and B submodules
+  assign and_out = a2_out & b2_out;
+
+  // XOR gate for final output
+  assign z = or_out ^ and_out;
+
 endmodule

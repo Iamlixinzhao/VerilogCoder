@@ -154,7 +154,9 @@ module TopModule
   output logic q
 );
 
-  // Combinational logic for q
-  assign q = a & b;
+  // Combinational logic
+  always @(*) begin
+    q = a & b;
+  end
 
 endmodule
